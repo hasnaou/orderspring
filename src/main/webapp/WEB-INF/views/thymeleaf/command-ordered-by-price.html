@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Commands Ordered By Price</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">ORDER CRAFT</a>
+    <a class="navbar-brand" href="welcome.html">Home</a>
+</nav>
+
+<h2>Commands Ordered By Price</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Date Cmd</th>
+        <th>Date Mise</th>
+        <th>Price Total</th>
+        <!-- Add other columns as needed -->
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="command : ${commands}">
+        <td th:text="${command.id}"></td>
+        <td th:text="${command.dateCmd}"></td>
+        <td th:text="${command.dateMise}"></td>
+        <td th:text="${command.priceTotal}"></td>
+        <!-- Add other columns as needed -->
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

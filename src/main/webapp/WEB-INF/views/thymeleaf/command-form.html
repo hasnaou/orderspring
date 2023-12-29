@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Command List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">ORDER CRAFT</a>
+    <a class="navbar-brand" href="welcome.html">Home</a>
+</nav>
+<div class="container">
+    <h2>Command List</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Customer Name</th>
+            <th>Article</th>
+            <th>Quantity</th>
+            <th>Price Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="command : ${commands}">
+            <td th:text="${command.customer != null ? command.customer.lastName : ''}"></td>
+            <td>
+                <span th:each="commandArticle : ${command.commandArticleList}">
+                    <span th:text="${commandArticle.article != null ? commandArticle.article.libelle : ''}"></span>
+                </span>
+            </td>
+            <td>
+                <span th:each="commandArticle : ${command.commandArticleList}">
+                    <span th:text="${commandArticle.quantity}"></span>
+                </span>
+            </td>
+            <td th:text="${command.priceTotal}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
