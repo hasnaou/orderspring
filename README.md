@@ -1,32 +1,36 @@
-Spring MVC hello world example (Maven and Thymeleaf)
-===============================
+<h1 align="center">
+  OrderCraft - Gestion des Commandes
+</h1>
 
-This is the source code for the article - [Spring MVC hello world example (Maven and Thymeleaf)](https://mkyong.com/spring-mvc/spring-mvc-hello-world-example/).
+## Description
+Cette application aura pour fonctionnalités principales l'ajout de nouvelles commandes, la visualisation de l'état d'avancement des commandes en cours, ainsi que la possibilité de marquer les commandes comme complètes dès qu'elles sont traitées. L'objectif global est de simplifier le processus de gestion des commandes afin d'optimiser l'efficacité opérationnelle de l'entreprise.
+## Objectifs du projet
+Ce projet vise à renforcer les compétences en programmation Java par l'application concrète de concepts avancés pour le développement d'applications web. L'utilisation de technologies telles que thymleaf, spring mvc, spring data jpa la gestion de dépendances avec Apache Maven, le déploiement sur Apache Tomcat, la collaboration via Git et Github.
 
-_P.S This tutorial is NOT a Spring Boot application, just pure Spring Web MVC!_
+## Conception
+### Diagramme cas d'utilisation
+[use case diagram](imgs/Use_Case_Diagram.png)
+### Diagramme de classe
+[class diagram](imgs/class_diagram.png)
+### Principales fonctionnalités de l'application :
+- Login
+- Add a client
+- Edit client
+- Delete client
+- Show Clients
+- Add article
+- Edit article
+- Delete article
+- Show articles
+- Add Command
+- Edit Command
+- Delete Command
+- Show Command
 
-## 1. Technologies and tools used:
-* Java 11
-* Spring 5.2.22.RELEASE
-* Thymeleaf 3.0.15.RELEASE
-* Embedded Jetty Server 9.4.45.v20220203
-* Servlet API 4.0.4
-* Bootstrap 5.2.0 (webjars)
-* IntelliJ IDEA
-* Maven 3.8.6
-* Spring Test 5.2.22.RELEASE
-* Hamcrest 2.2
-* JUnit 5.9
 
-## 2. How to run this project?
-```shell
-$ git clone https://github.com/mkyong/spring-mvc/
-
-$ cd spring-mvc-hello-world
-
-$ mvn clean jetty:run
-
-# visit http://localhost:8080/spring
-
-# visit http://localhost:8080/spring/hello/mkyong
-```
+## Les outils utilisés <a name = "outils-utilisés"></a>
+- IntelliJ IDEA
+- Git
+- GitHub
+- StarUML
+- Xampp
