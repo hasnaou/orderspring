@@ -11,11 +11,11 @@ Ce projet vise à renforcer les compétences en programmation Java par l'applica
 ### Diagramme cas d'utilisation
 ![Use_Case_Diagram](https://github.com/hasnaou/orderspring/assets/102745014/1a44efac-fcf3-4bb6-9224-e15d87d5961c)
 
-[use case diagram](imgs/Use_Case_Diagram.png)
+
 ### Diagramme de classe
 ![class_diagram](https://github.com/hasnaou/orderspring/assets/102745014/b06e348c-dbe5-481a-bd70-5df8b48146e4)
 
-[class diagram](imgs/class_diagram.png)
+
 ### Principales fonctionnalités de l'application :
 - Login
 - Add a client
